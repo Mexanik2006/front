@@ -1,0 +1,96 @@
+.login_container {
+    border: 1px solid white;
+    width: 639px;
+    height: 610px;
+    margin: 50px auto;
+    border-radius: 32px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.show-password-btn {
+    background: none;
+    border: none;
+    color: blue;
+    /* Color for the button */
+    cursor: pointer;
+    margin-left: 10px;
+    /* Space between the input and button */
+}
+
+.error {
+    color: red;
+    /* Style for error messages */
+}
+
+.login_form {
+    /* border: 1px solid red; */
+    /* padding: 65px 156px; */
+    margin: 65px 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_img img {
+    width: 164px;
+    height: 164px;
+    object-fit: cover;
+}
+
+.login_title h1 {
+    font-family: 'SF Pro Display', sans-serif;
+    color: #0F0F10;
+    margin-top: 26px;
+    margin-bottom: 22px;
+}
+
+.login_element {
+    margin-bottom: 22px;
+}
+
+.login_element input {
+    width: 320px;
+    height: 44px;
+    padding: 9px 16px;
+    border-radius: 8px;
+    color: #0F0F10;
+    border: 1px solid #D6D6D6;
+}
+
+.login_element input:focus {
+    border: none;
+    /* display: block; */
+}
+
+.login_btn button {
+    width: 100%;
+    height: 44px;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 456px) {
+    .login_container {
+        border: 1px solid white;
+        width: 90%;
+        height: 610px;
+        margin: 50px auto;
+        border-radius: 32px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .login_title h1 {
+        font-family: 'SF Pro Display', sans-serif;
+        color: #0F0F10;
+        margin-top: 26px;
+        margin-bottom: 22px;
+        font-size: 37px;
+        /* border: 1px solid red; */
+        width: 300px;
+    }
+}

@@ -1,0 +1,196 @@
+.download_title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tablesinlleuser {
+    width: 1100px;
+    height: 500px;
+    overflow: auto;
+}
+
+.loaderRotatingLines {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-spinner-container {
+    position: relative;
+    width: 1100px;
+    /* Spinnerning umumiy kattaligi */
+    height: 500px;
+    /* margin: auto; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 47px; */
+    /* border: 1px solid red; */
+}
+
+/* Spinnerning barcha shoxlari */
+.spinner-bar-download {
+    position: absolute;
+    width: 20px;
+    /* Shoxning kengligi */
+    height: 8px;
+    /* border: 1px solid red; */
+    /* Shoxning balandligi */
+    background: #000;
+    /* Shoxning rangi */
+    border-radius: 20px;
+    animation: fade 1.2s linear infinite;
+}
+
+/* Har bir shoxni alohida joylashuvi */
+.bar_download1 {
+    transform: rotate(0deg) translate(18px);
+    animation-delay: -1.1s;
+}
+
+.bar_download2 {
+    transform: rotate(45deg) translate(18px);
+    animation-delay: -1s;
+}
+
+.bar_download3 {
+    transform: rotate(90deg) translate(18px);
+    animation-delay: -0.9s;
+}
+
+.bar_download4 {
+    transform: rotate(135deg) translate(18px);
+    animation-delay: -0.8s;
+}
+
+.bar_download5 {
+    transform: rotate(180deg) translate(18px);
+    animation-delay: -0.7s;
+}
+
+.bar_download6 {
+    transform: rotate(225deg) translate(18px);
+    animation-delay: -0.6s;
+}
+
+.bar_download7 {
+    transform: rotate(270deg) translate(18px);
+    animation-delay: -0.5s;
+}
+
+.bar_download8 {
+    transform: rotate(315deg) translate(18px);
+    animation-delay: -0.4s;
+}
+
+.bar_download9 {
+    transform: rotate(360deg) translate(18px);
+    animation-delay: -0.3s;
+}
+
+.bar_download10 {
+    transform: rotate(405deg) translate(18px);
+    animation-delay: -0.2s;
+}
+
+/* Shoxlarning animatsiyasi */
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 1;
+        /* To'liq ko'rinadi */
+    }
+
+    50% {
+        opacity: 0.3;
+        /* Yarim ko'rinish */
+    }
+}
+
+
+
+.downImage {
+    /* border: 1px solid red; */
+    width: 1100px;
+    height: 500px;
+    overflow: auto;
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.downImage .img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.videoDown {
+    /* border: 1px solid red; */
+    width: 1100px;
+    height: 500px;
+    overflow: auto;
+    margin-top: 20px;
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+.videos {
+    /* border: 1px solid red; */
+    display: grid;
+    gap: 10px 10px;
+    grid-template-columns: auto auto auto auto;
+}
+
+@media screen and (max-width: 456px) {
+    .download_title {
+        margin-top: 20px;
+    }
+
+    .download-spinner-container {
+        height: 200px;
+        /* border: 1px solid red; */
+        margin-left: -50px;
+    }
+
+    .download_section {
+        width: 95%;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .downImage {
+        width: 95%;
+        margin: 10px auto;
+        grid-template-columns: auto auto;
+    }
+
+    .downVideo {
+        margin-top: 20px;
+    }
+
+    .downImage .img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .videoDown {
+        /* border: 1px solid red; */
+        width: 95%;
+        /* height: 500px; */
+        overflow: auto;
+
+        margin: 20px auto;
+    }
+
+    .videos {
+        /* border: 1px solid red; */
+        display: grid;
+        gap: 10px 10px;
+        grid-template-columns: auto;
+    }
+}

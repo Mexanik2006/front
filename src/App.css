@@ -1,0 +1,27 @@
+.app_title {
+    text-align: center;
+    margin: 20px 0px 40px 0px;
+}
+
+.App {
+    /* border: 1px solid red; */
+    margin: 0 20px;
+}
+
+.sidebar_container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar_menyu {
+    width: 256px;
+}
+
+@media screen and (max-width: 456px) {
+    .sidebar_menyu {
+        width: 90%;
+        margin: auto;
+        border: 2px solid #f0f0f0;
+        border-radius: 12px;
+    }
+}
