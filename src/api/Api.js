@@ -5,7 +5,7 @@ import axios from "axios";
 //     baseURL: 'http://localhost:2600'
 // });
 const instance = axios.create({
-    baseURL: 'https://backend-sandy-alpha.vercel.app/'
+    baseURL: 'https://backend-sandy-alpha.vercel.app'
 });
 
 export default instance
